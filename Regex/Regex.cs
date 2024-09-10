@@ -94,8 +94,7 @@ public class RegExpParser {
           case TokenType.CloseBracket:
             breakOut = true;
             break;
-          case TokenType.Or:
-            //stack++;            
+          case TokenType.Or:         
             SequenceOutput(output);
             index++;
             var rhs = Parse(matchClose);
@@ -127,7 +126,6 @@ public class RegExpParser {
       return null;
     }
     
-    //ClearStack(output, stack);
     SequenceOutput(output);
     return output[0];
   }
@@ -206,8 +204,6 @@ public class RegExpParser {
     
     SequenceOutput(output);
     return output[0];
-    //Reg.add(Reg.add(Reg.str(Reg.normal('a')), Reg.normal('b')), Reg.normal('b'));
-    
   }
 }
 

@@ -488,7 +488,6 @@ namespace InterpreterKata.Parsing
             if(function != null)
             {
               stack.Push(current); 
-              //take arguments according to the arg length of the function
               output.Push(function);
             }
             else

@@ -1,3 +1,4 @@
+//https://www.codewars.com/kata/576986639772456f6f00030c
 using System;
 public class Finder
 {
